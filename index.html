@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- AOS CSS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <div class="main">
+    <!-- Header -->
+    <header class="header-bg bg-color py-4" data-aos="fade-down">
+      <div class="container">
+        <div class="header-main flex">
+          <div class="logo">
+            <img src="asset/image/logo/logo.svg" alt="">
+          </div>
+          <div class="btn btn-1 d-none d-sm-block">
+            <a href="https://cmsthemes.innovatewebs.com/digitalagency/">VISIT THEMES</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="main-content">
+        <div class="container" style="max-width:1500px;">
+          <div class="row g-5">
+            <!-- Left Sidebar -->
+            <div class="col-3 left-sidebar py-3" data-aos="fade-right">
+              <div class="accordion" id="docAccordion">
+                <h2 class="text-center heading py-3 mb-4" data-aos="zoom-in">Doc Navigation</h2>
+
+                <!-- Item 1 -->
+                <div class="accordion-item bg-color my-2" data-aos="flip-up">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="location.href='#getting-started'">
+                      Getting Started
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#docAccordion">
+                    <div class="accordion-body">
+                      <a href="#getting-started" class="d-block mb-1"><span>1.</span> Requirements</a>
+                      <a href="#requirements" class="d-block mb-1"><span>2.</span> What's Included</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item bg-color my-2"  data-aos="flip-down" data-aos-delay="100">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button no-icon" type="button" onclick="location.href='#WordPress-Installation';">
+                      WordPress Installation
+                    </button>
+                  </h2>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item bg-color my-2" data-aos="zoom-in-left" data-aos-delay="200">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="location.href='#installing-theme';">
+                      Installing the Theme
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#docAccordion">
+                    <div class="accordion-body">
+                      <a href="#using-theme-uploader" class="d-block mb-1"><span class="spn1">1.</span> Upload Parent Theme</a>
+                      <a href="#upload-child" class="d-block mb-1"><span class="spn1">2.</span> Upload Child Theme</a>
+                      <a href="#installing-required-plugin" class="d-block mb-1"><span class="spn1">3.</span> Installing Required Plugin</a>
+                      <a href="#pro-addon" class="d-block mb-1"><span class="spn1">4.</span> Pro Addon Enable</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item bg-color my-2" data-aos="zoom-in-right" data-aos-delay="300">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="location.href='#importing-demo-content';">
+                      Importing Demo Content
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#docAccordion">
+                    <div class="accordion-body">
+                      <a href="#one-click" class="d-block mb-1"><span class="spn1">1.</span> One Click Demo</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item bg-color my-2" data-aos="slide-up" data-aos-delay="400">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="location.href='#Basic-Site-Setting';">
+                      Basic Site Setting
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#docAccordion">
+                    <div class="accordion-body">
+                      <a href="#menu-option" class="d-block mb-1"><span class="spn1">1.</span> Menu options</a>
+                      <a href="#reading" class="d-block mb-1"><span class="spn1">2.</span> Reading Setting</a>
+                      <a href="#mail" class="d-block mb-1"><span class="spn1">3.</span> Mailchimp</a>
+                      <a href="#post" class="d-block mb-1"><span class="spn1">4.</span> post</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="accordion-item bg-color my-2" data-aos="slide-right" data-aos-delay="500">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="location.href='#Theme-Options';">
+                      Theme Options
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#docAccordion">
+                    <div class="accordion-body">
+                      <a href="#header" class="d-block mb-1"><span class="spn1">1.</span>Header</a>
+                      <a href="#footer" class="d-block mb-1"><span class="spn1">2.</span>Footer</a>
+                      <a href="#loader" class="d-block mb-1"><span class="spn1">3.</span>Loader Settings</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-9 right-content" data-aos="fade-left">
+              <div>
+                <div class="con1 bg-color p-4 brd" data-aos="fade-up">
+                  <p class="pr1 pb-3"><span class="spn1">1 </span><b> Item Name :</b> Digital Agency WordPress Theme </p>
+                  <p class="pr1 pb-3"><span class="spn1">2 </span><b> Created :</b> 26 September 2025  </p>
+                  <p class="pr1 pb-3"><span class="spn1">3 </span><b> Author :</b><a href="https://themeforest.net/user/innovatewebs0082"> Innovatewebs0082 </a> </p>
+                  <p class="pr1"><span class="spn1">4 </span><b> Support Ticket : </b><a href="#"> innovatewebs82@gmail.com</a></p>
+                </div>
+                <div class="img-sec bg-color p-2 brd my-5" data-aos="zoom-in">
+                  <img src="asset/image/slider/1.png" alt="">
+                </div>
+
+                <!-- -----------------------------introduction start---------------------------- -->
+                <div class="whats-included"  id="getting-started" data-aos="fade-up">
+                  <h1 class="hr1"><b>Introduction</b></h1>
+                  <p class="pr2 my-3"><b>Recommended PHP configuration limits</b></p>
+                </div>
+                <div class="limit bg-color p-4 brd mb-5" data-aos="fade-left">
+                  <p class="pr1 brd-left ps-3 text-white">php_value upload_max_filesize 600M <br>
+                    php_value post_max_size 600M<br>
+                    php_value memory_limit 256M<br>
+                    php_value max_execution_time 300<br>
+                    php_value max_input_time 300</p>
+                </div>
+                <div class=" What's Included" data-aos="fade-up" id="requirements">
+                  <p class="pr2 my-3"><b>What's Included</b></p>
+                  <p class="pr3">After purchasing the Digital Agency theme on ThemeForest with your Envato account, visit your Downloads page. You can choose to download either the Digital Agency theme only or the full Digital Agency theme package, which includes all the necessary files for your website setup:</p>
+                </div>
+                <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                  <img src="asset/image/Include-img/include.png" alt="">
+                </div>
+                <div class="package-download" data-aos="fade-up">
+                  <p class="pr2 my-3"><b>The contents of the theme package downloaded from ThemeForest</b></p>
+                </div>
+                <div class="con1 bg-color p-4 brd mb-5" data-aos="fade-up">
+                  <p class="pr1 pb-3"><span class="spn1">1 </span><b> Innov.zip :</b> An Installable WordPress Theme zip file. this file you need to upload to WordPress.</p>
+                  <p class="pr1 pb-3"><span class="spn1">2 </span><b> digitalagency-child.zip  :</b>  This is the basic child theme for Digital Agency. Installing it is safe, and it helps preserve your custom changes when updating the parent theme. <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">More on child themes</a></p>
+                  <p class="pr1 pb-3"><span class="spn1">3 </span><b> Licensing : </b> This folder contains the terms and conditions of the license.</p>
+                  <p class="pr1"><span class="spn1">4 </span><b> Documentation : </b> This folder contains what you are reading now :)</p>
+                </div>
+              </div>
+
+              <!-- -----------------------------introduction end---------------------------- -->
+               
+
+              <!-- -----------------------------wordpress installation start-------------------------------- -->
+                <div id="WordPress-Installation" data-aos="fade-up">
+                    <div class="Installation">
+                      <h1 class="hr1"><b>WordPress Installation</b></h1>
+                      <p class="pr3 my-3">Please follow the instructions in the video to see how you can install WordPress on your hosting:</p>
+                    </div>
+                    <div class="con1 bg-color p-4 brd mb-5" data-aos="fade-up">
+                      <p class="pr1 pb-3"><span class="spn1">1 </span><b> For local host :</b><a href=" https://www.youtube.com/watch?v=snFzbPm_RUE"> https://www.youtube.com/watch?v=snFzbPm_RUE</a> </p>
+                      <p class="pr1"><span class="spn1">2 </span><b> For cPanel : </b><a href="https://www.youtube.com/watch?v=t-YBqV2ReR0"> https://www.youtube.com/watch?v=t-YBqV2ReR0</a></p>
+                    </div>
+                </div>
+                
+              <!-- -----------------------------wordpress installation end-------------------------------- -->
+
+              <!-- -----------------------------install theme start------------------------ -->
+                <div id="installing-theme" data-aos="fade-up">
+                    <div class="theme_Installation">
+                      <h1 class="hr1 mb-4"><b>Installing the theme</b></h1>
+                        <div class="limit bg-color p-4 brd" data-aos="fade-left">
+                            <p class="pr1 brd-left ps-3"><b>Important!</b> if you download the All Files archive from ThemeForest and try to upload it to your WordPress, you will receive this error: <br><b>Theme is missing the style.css stylesheet.</b> Please make sure you unzipped the main archive and are uploading the correct file to <br>your WordPress.</p>
+                        </div>
+                    </div>
+
+                    <!-- ------------------Theme Uploader----------------- -->
+                     <div id="using-theme-uploader">
+                        <div class="package-download" data-aos="fade-up">
+                        <p class="pr2 my-3"><b>1. Upload Parent Theme</b></p>
+                        <p class="pr1 mb-3">Follow the steps as instructed in the images below:</p>
+                        </div>
+                         <div class="con1 bg-color p-4 brd mb-4" data-aos="fade-up">
+                            <p class="pr1 pb-3"><span class="spn1">1 </span>From the dashboard go to <span class="spn2">Appearance</span> -> <span class="spn2">Themes</span> -> <span class="spn2">Add New</span> -> <span class="spn2">Upload Theme</span></p>
+                            <p class="pr1 pb-3"><span class="spn1">2 </span>Click on<b> “Choose File” </b> and select <b> Innov.zip </b></p>
+                            <p class="pr1 pb-3"><span class="spn1">3 </span></span>Click on<b>  “Install Now”. </b></p>
+                            <p class="pr1"><span class="spn1">4 </span>Go to Themes page</p>
+                        </div>
+                         <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/1.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Appearance → Themes → Add New </p>
+                        <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/2.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Click on “Choose File” and select innov.zip and Click on “Install Now”. </p>
+                         <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/3.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Go to Themes page</p>
+                     </div>
+
+                    <!-- ----------------------------child-theme---------------------- -->
+                     <div id="upload-child">
+                        <div class="ftp" data-aos="fade-up">
+                        <p class="pr2 my-3"><b>2. Upload Child Theme</b></p>
+                        <p class="pr1 mb-3">Follow the following steps to upload your child themes:</p>
+                      </div>
+                       <div class="con1 bg-color p-4 brd mb-4" data-aos="fade-up">
+                            <p class="pr1 pb-3"><span class="spn1">1 </span>From the dashboard go to <span class="spn2">Appearance</span> -> <span class="spn2">Themes</span> -> <span class="spn2">Add New</span> -> <span class="spn2">Upload Theme</span></p>
+                            <p class="pr1 pb-3"><span class="spn1">2 </span>Click on<b> “Choose File” </b> and select <b> digitalagency-child.zip </b></p>
+                            <p class="pr1 pb-3"><span class="spn1">3 </span></span>Click on<b>  “Install Now”. </b></p>
+                            <p class="pr1"><span class="spn1">4 </span>Activate Theme </p>
+                        </div>
+                        <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/1.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Appearance → Themes → Add New </p>
+                        <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/4.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Click on “Choose File” and select digitalagency-child.zip and Click on “Install Now”. </p>
+                         <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                            <img src="asset/image/theme uploader/5.png" alt="">
+                        </div>
+                        <p class="pr1 mb-4">Activate Child-theme</p>
+                     </div>
+
+                    <!-- -----------------install require plugin--------------- -->
+                     <div id="installing-required-plugin">
+                        <div class="package-download" data-aos="fade-up">
+                        <p class="pr2 my-3"><b>3. Installing required plugins</b></p>
+                        <p class="pr1 mb-3">After activating the Digital Agency child theme, it is important to install all the required and recommended plugins. These plugins add essential functionality and advanced features that are not included in the base WordPress installation. </p>
+                      </div>
+                       <div class="con1 bg-color p-4 brd mb-4" data-aos="fade-up">
+                          <p class="pr1 pb-3"><span class="spn1">1 </span>From the dashboard go to <span class="spn2">Appearance</span> -> <span class="spn2">Install Plugin</span></p>
+                          <p class="pr1 pb-3"><span class="spn1">2 </span>Toggle all the required plugins and hint <b> “Install” </b></p>
+                          <p class="pr1"><span class="spn1">3 </span>The last step will be installing of plugins.</p>
+                      </div>
+                       <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                          <img src="asset/image/required plugin/1.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">Click on the begin installing plugins link to install all the required plugins. </p>
+                      <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                          <img src="asset/image/required plugin/2.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">Select all and install</p>
+                       <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                          <img src="asset/image/required plugin/3.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">Return To The Dashboard</p>
+                    </div>
+
+                     <div id="pro-addon">
+                        <div class="package-download" data-aos="fade-up">
+                        <p class="pr2 my-3"><b>4. Pro Addon Enable</b></p>
+                        <p class="pr1 mb-3">After installing all the required and recommended plugins for the Digital Agency theme, it is important to activate all the PRO add-ons. These add-ons unlock additional features and enhanced functionality, allowing you to take full advantage of the theme’s capabilities. </p>
+                      </div>
+                       <div class="img-sec bg-color p-2 brd my-3" data-aos="zoom-in">
+                          <img src="asset/image/pro-addon/1.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">Enable all the pro addons</p>
+                    </div>
+                </div>
+
+
+
+                <!-- ---------------------------install theme end--------------------------- -->
+
+                <!-- --------------------------importing demo data start-------------------------- -->
+                 <div id="importing-demo-content" data-aos="fade-up">
+                  <h1 class="hr1"><b>Importing Demo Contents</b></h1>
+                <div class="one_click pt-2 mb-5" data-aos="fade-left" id="one-click">
+                   <p class="pr2 my-3"><b>1. One Click Method</b></p>
+                    <p class="pr1 my-3">This method will remove all existing content on your website, so it should only be used on a fresh installation. It is the fastest way to set up your site, as everything is done automatically with a single click. If you want your website to exactly match the Digital Agency demo without having to configure anything manually after importing the data, this method is the most suitable choice.</p>
+                  <p class="pr1 brd-left bg-color p-4 mb-4"><b>Note:</b> Please remember that when you are done with the demo import, your some existing settings will be replaced by the demo contents Like: Your menu, Customizer. So it is recommended that you should only do this in fresh site.</p>
+                  <div class="con1 bg-color p-4 brd mb-5" data-aos="fade-up">
+                      <p class="pr1 pb-3"><span class="spn1">1 </span>Ensure, that the<b> One-Click Import</b>  plugin is installed and activated;</p>
+                       <p class="pr1 pb-3"><span class="spn1">2 </span>From the dashboard go to <span class="spn2">Appearance</span> -> <span class="spn2">Import Demo Data</p>
+                      <p class="pr1 pb-3"><span class="spn1">3 </span>Choose the demo you want to install and click on the<b> “Import Demo Data” </b> button​ below​; </p>
+                      <p class="pr1 pb-3"><span class="spn1">4 </span>Then click on<b> "Continue & Import "</b> button</p>
+                      <p class="pr1 pb-3"><span class="spn1">5 </span>After that <b> "Import Complete"</b> will be shows</p>
+                  </div>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/one click method/1.png" alt="">
+                  </div>
+                  <p class="pr1 mb-4">go to Appearance -> Import Demo Data </p>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/one click method/2.png" alt="">
+                  </div>
+                  <p class="pr1 mb-4">Click "Continue & Import" Button</p>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/one click method/3.png" alt="">
+                  </div>
+                  <p class="pr1 mb-4">Processing</p>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/one click method/4.png" alt="">
+                  </div>
+                  <p class="pr1 mb-4">Import Complete! Congrats, your demo was imported successfully.</p>
+                </div>
+
+                <!-- -------------------------one click end--------------------- -->
+                </div>
+
+                 <!-- --------------------------importing demo data end-------------------------- -->
+                  
+                <!-- ------------------------site setting start-------------------- -->
+
+                <div class="site_setting mt-3" data-aos="fade-up" id="Basic-Site-Setting">
+                 <h1 class="hr1"><b>Basic Site Setting</b></h1>
+                  <p class="pr1 mt-3">Here you can customize the overall layout of your website. Adjust the container width, padding, and gaps to achieve the exact look you want.</p>
+                  <p class="pr1">Changes you make here will apply globally across all pages.</p>
+                  <div class="con1 bg-color p-4 brd my-4" data-aos="fade-up">
+                      <p class="pr1 pb-3"><span class="spn1">1 </span>To make basic site setting go to <span class="spn2">Dashboard</span> -> <span class="spn2">Pages</p>
+                       <p class="pr1 pb-3"><span class="spn1">2 </span> Hover over the Home page, and you will see a popup option. Click on "Edit with Elementor"</p>
+                      <p class="pr1 pb-3"><span class="spn1">3 </span>The Elementor editor page will open.</p>
+                      <p class="pr1 pb-3"><span class="spn1">4 </span> Click on the "site setting" icon as shown in the picture below.</p>
+                      <p class="pr1 pb-3"><span class="spn1">5 </span>In the Layout option, make changes according to the given picture and save the changes.</p>
+                  </div>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/site-setting/1.png" alt="">
+                  </div>
+                   <p class="pr1 mb-4">Go to the pages and hover on home->edit with elementor.</p>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/site-setting/2.png" alt="">
+                  </div>
+                   <p class="pr1 mb-4">Go to the site setting & Select the layout option</p>
+                  <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                    <img src="asset/image/site-setting/3.png" alt="">
+                  </div>
+                   <p class="pr1 mb-4">Make changes according to given picture and save changes</p>
+
+                   <!-- --------------------menu option start----------------- -->
+                   <div class="menu-option" data-aos="fade-up" id="menu-option">
+                      <p class="pr2 my-3"><b>Menu Option</b></p>
+                       <p class="pr1 mt-3">In this menu option, you need to write your menu name in the “Menu Name” field. After that, you can arrange the menu items as per your requirement. Finally, select your menu name in the option below and save the menu.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/menu-option/1.png" alt="">
+                      </div>
+                    </div>
+                     <!-- --------------------menu option end----------------- -->
+
+                     <!-- --------------------Reading start----------------- -->
+                   <div class="menu-option" data-aos="fade-up" id="reading">
+                      <p class="pr2 my-3"><b>Reading Setting</b></p>
+                       <p class="pr1 mt-3">In these options, first choose “Static Page.” After that, select the Home page you want to display as the first (default) page on your site. This ensures that whenever you open your website, the selected Home page will be shown by default.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/reading-setting/1.png" alt="">
+                      </div>
+                    </div>
+                     <!-- --------------------Reading end----------------- -->
+
+                     <!-- ----------------------mailchimp start------------------ -->
+                        <div class="mail-option" data-aos="fade-up" id="mail">
+                      <p class="pr2 my-3"><b>Mailchimp Option</b></p>
+                      <p class="pr1 mt-3">In Mailchimp, the user should first enter their API key and save the changes. The form is always available, but if the user wants to customize the form’s code or appearance, they can make the desired changes and save them to update the form.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/mainchimp/1.png" alt="">
+                      </div>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/mainchimp/2.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">If users want to make changes in Mailchimp, they need to go to the form.</p>
+                    </div>
+                     <!-- ----------------------mailchimp end------------------ -->
+
+                     <!-- ----------------------post start------------------ -->
+                        <div class="mail-option" data-aos="fade-up" id="post">
+                      <p class="pr2 my-3"><b>Post Setting</b></p>
+                      <p class="pr1 mt-3">In the post settings, you need to delete the specific file that is not useful and make the unnecessary changes in the structure.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/post setting/1.png" alt="">
+                      </div>
+                    </div>
+                     <!-- ----------------------post end------------------ -->
+                </div>
+                <!-- ------------------------site setting end-------------------- -->
+
+                <!-- ----------------------theme options start------------------- -->
+                <div class="header_setting mt-3" data-aos="fade-up" id="Theme-Options">
+                  <h1 class="hr1"><b>Theme Options</b></h1>
+
+                  <!-- --------------header------------ -->
+                   <div id="header">
+                      <p class="pr2 my-3"><b>Header</b></p>
+                      <p class="pr1 mt-3">To change Theme Options header navigate to <span class="spn2">Dashboard</span>-> <span class="spn2">Appearance</span>-> <span class="spn2">Header</span> Make the changes wherever you need.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/header/1.png" alt="">
+                      </div>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/header/2.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">To make any changes in any Header items click on the setting icon like shown in picture.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/header/3.png" alt="">
+                      </div>
+                      <p class="pr1 mb-4">If you want to add a widget item, hover over the row to display the “+” icon. Click on it to see more options and select the one you want to add. After making any changes, make sure to publish them to save youe changes.</p>
+                   </div>
+
+                  <!-- -----------------footer-------------- -->
+                   <div id="footer">
+                      <p class="pr2 my-3"><b>Footer</b></p>
+                      <p class="pr1 mt-3">To make changes in Theme Options footer then go to <span class="spn2">Dashboard</span>-> <span class="spn2">Appearance</span>-> <span class="spn2">Footer</span> Make the changes wherever you need.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/footer/1.png" alt="">
+                      </div>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/footer/2.png" alt="">
+                      </div>
+                       <p class="pr1 mb-4">If you want to see more footer styling options, click on the settings icon as shown in the picture and if you make any changes that click on the publush button to save your changes.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/footer/3.png" alt="">
+                      </div>
+                       <p class="pr1 mb-4">If the user wants to change the footer text, they can do by going to Appearance → Widgets and after making changes click on the update button to save changes.</p>
+                   </div>
+
+                  <!-- -----------------Loader-------------- -->
+                   <div id="loader">
+                      <p class="pr2 my-3"><b>Loader</b></p>
+                      <p class="pr1 mt-3">To make changes in loader then go to <span class="spn2">Wp-content</span>-> <span class="spn2">themes</span>-> <span class="spn2">your child theme</span> -> <span class="spn2">assets</span> -> <span class="spn2">image</span> here you can replace loader.</p>
+                      <div class="img-sec bg-color p-2 brd my-4" data-aos="zoom-in">
+                        <img src="asset/image/loader/1.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <!-- ----------------------theme options end------------------- -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JS file links -->
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/js/script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // speed of animation
+      once: true,     // animate only once
+      offset: 120     // trigger point
+    });
+  </script>
+</body>
+</html>

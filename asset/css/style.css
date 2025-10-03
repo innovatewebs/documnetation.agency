@@ -1,0 +1,253 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');/* Reset a bit */
+
+
+/* ========================== Reset & Base Styles ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: "Outfit", sans-serif;
+   background-color: var(--bgcolor);
+    overflow-x: hidden;
+}
+/* ========================== CSS Variables ========================== */
+:root{
+    --primarycolor:#61c4b0;
+    --secondarycolor:#fff;
+    --bgcolor:#000000;
+    --contentbg:#111111;
+    --spancolor:#92939e;
+    --border:#e5e5e5;
+    --warning:red;
+    --fontfamily: "Outfit", sans-serif;
+}
+
+/* ========================== Flex Utility ========================== */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     flex-wrap: wrap;
+}
+/* ========================== Background & Borders ========================== */
+.bg-color{
+    background-color: var(--contentbg);
+}
+.brd{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================== Header ========================== */
+.header-bg {
+    position: sticky;   /* or position: fixed; */
+    top: 0;             /* stick to top */
+    z-index: 999;       /* stay above content */
+    width: 100%;
+}
+
+/* ========================== Layout ========================== */
+.doc-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main-content{
+    margin-top: 40px;
+}
+.heading{
+    color: var(--secondarycolor);
+     font-family: var(--fontfamily);
+     border-bottom: 1px solid var(--border);
+     background-color: var(--contentbg);
+}
+.right-content h2,p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+}
+
+/* ========================== Left Sidebar ========================== */
+.left-sidebar {
+    position: sticky;
+    top: 90px; /* header height + spacing */
+    height: calc(100vh - 90px); /* full viewport minus header */
+    overflow-y: auto; /* scroll if content taller */
+    flex-shrink: 0; /* prevent shrinking in flex/grid */
+}
+/* ========================== Buttons ========================== */
+.btn-1 a{
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    padding: 20px 40px;
+    text-decoration: none;
+}
+/* ========================== Accordion ========================== */
+.accordion-header button{
+    color: var(--secondarycolor);
+}
+.accordion-button.active{
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+}
+.accordion-button.no-icon::after {
+    display: none;
+}
+.accordion-body a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+.accordion-body a span{
+    color: var(--spancolor);
+}
+
+/* smooth slide when highlighted */
+.accordion-item.active-scroll .accordion-button {
+  transform: translateX(8px);
+  transition: transform 0.3s ease;
+}
+
+/* plus icon on the right */
+.accordion-button::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+   color: var(--secondarycolor);
+}
+
+/* rotate to cross when accordion is open */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+}
+.accordion-item {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.accordion-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========================== Right Content / Numbers ========================== */
+.pr1 .spn1 {
+    display: inline-block;        
+    width: 25px;                 
+    height: 25px;               
+    line-height: 25px;     
+    text-align: center;         
+    background-color: var(--primarycolor);  
+    color: var(--secondarycolor);                
+    font-weight: bold;
+    border-radius: 4px;          
+    margin-right: 8px;        
+    font-size: 14px;
+}
+.pr1 b{
+    color: var(--secondarycolor);
+    font-size: 16px;
+}
+.spn2{
+     display: inline-block;   
+    padding: 5px 10px;
+    text-align: center;          
+   border: 1px solid var(--primarycolor);
+   color: var(--secondarycolor);
+    font-weight: bold;
+    margin-right: 8px;            
+    font-size: 14px;
+    &:hover{
+        background-color: var(--primarycolor);
+    }
+}   
+/* -------------------getting-started-img------------------- */
+.img-sec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover the div area without stretching */
+}
+
+/* ----------------------heading--------------- */
+.hr1{
+    color: var(--secondarycolor);
+}
+.pr1{
+    color: var(--spancolor);
+    font-size: 16px;
+}
+.pr2{
+    color: var(--secondarycolor);
+    font-size: 20px;
+}
+.brd-left{
+    border-left: 2px solid var(--primarycolor);
+}
+.pr3{
+    color: var(--spancolor);
+    font-size: 16px;
+}
+.right-section {
+  padding: 60px 0;
+}
+
+/*-----------icon-------------  */
+.icon i{
+    font-size: 45px;
+    color: var(--warning);
+}
+
+/* ========================== Sidebar Active Link ========================== */
+.sidebar-link.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* ========================== Media Queries ========================== */
+@media (max-width: 1200px) {
+    .left-sidebar{
+        display: none;
+    }
+     .row.g-5 {
+        flex-direction: column;
+    }
+    .left-sidebar,
+    .right-content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+}
+@media (max-width: 576px) {
+  .accordion-item,
+  .img-sec {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+/* Remove default top margin on first element inside section */
+.doc-section > :first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Optional: give a small offset so content isn’t flush against header */
+.doc-section::before {
+  content: "";
+  display: block;
+  height: 20px; /* adjust as needed */
+}
+
